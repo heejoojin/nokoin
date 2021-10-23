@@ -1,10 +1,10 @@
 
 Dynamsoft.DBR.BarcodeScanner.organizationID = "100731799";
 Dynamsoft.DBR.BarcodeReader.productKeys = "t0068NQAAAEa2vhEKG8ZfiSEzbWTHMdB3k8iXEU65DKVd3BncYIPvJPlni465ybIveVFFFdg3qugMursl41wKsk9q1waDWJQ=";
-let pScanner = null;
+let _scanner = null;
 document.getElementById('button').onclick = async function () {
     try {
-        let scanner = await (pScanner = pScanner || Dynamsoft.DBR.BarcodeScanner.createInstance());
+        let scanner = await (_scanner = _scanner || Dynamsoft.DBR.BarcodeScanner.createInstance());
         /* 
          * onFrameRead is triggered once each frame is read. 
          * There can be one or multiple barcodes on each frame.
@@ -16,7 +16,6 @@ document.getElementById('button').onclick = async function () {
                 console.log(result.barcodeFormatString + ": " + result.barcodeText);
             }
         };
-
         /* 
          * onUnduplicatdRead is triggered once a new barcode is found. 
          * The amount of time that the library 'remembers' the found barcode is defined by duplicateForgetTime 
@@ -32,32 +31,3 @@ document.getElementById('button').onclick = async function () {
         throw ex;
     }
 };
-
-// function takeQRcode() {
-    
-    // var video = document.querySelector("#video");
-    // if (navigator.mediaDevices.getUserMedia) {
-    //   navigator.mediaDevices.getUserMedia({ video: true })
-    //     .then(function (stream) {
-    //       video.srcObject = stream;
-    //     })
-    //     .catch(function (err0r) {
-    //       console.log("Something went wrong!");
-    //     });
-    // }
-    // 
-
-    
-    
-
-    // let scanner = null;
-    // (async () => {
-    //   let scanner = await Dynamsoft.DBR.BarcodeScanner.createInstance();
-    //   await scanner.setUIElement(document.getElementById('video'));
-    //   // await scanner.setResolution(400, 300);
-    //   scanner.onFrameRead = results => {if (results.length > 0) console.log(results)};
-    //   // txt = user id
-    //   scanner.onUnduplicatedRead = (txt, result) => {alert(txt);};
-    //   await scanner.show();
-    // })();
-// }
