@@ -9,6 +9,7 @@ setTimeout(function() {
             tagline: 'false',
             size: 'responsive'
         },
+        
         createOrder:function(data, actions) {
             return actions.order.create({
                 purchase_units: [{
@@ -18,12 +19,13 @@ setTimeout(function() {
                 }]
               });
         },
-        onApprove:function(data, actions) {
-            return actions.order.capture().then(function(detail) {
-                console.log(detail);
-                window.location.href = "/";
-            });
-        }
+
+        // onApprove:function(data, actions) {
+        //     return actions.order.capture().then(function(detail) {
+        //         console.log(detail);
+        //         window.location.href = "/";
+        //     });
+        // }
     }).render('#paypal-button');
 }, 1000);
 
