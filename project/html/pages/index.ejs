@@ -1,42 +1,20 @@
 <html lang="en">
 
 <head>
-  <% include ../helpers/head %>
 </head>
 
-<body class="container">
+<body>
   <main>
-    <section class="sec1">
-      <div class="box1">
-        <div class="menu">
-          <% include ../helpers/menu %>
-        </div>
-        <div class="home">
-          <div class="box1-1">
-            <% include ../helpers/home %>
-          </div>
-          <div class ="box1-2">
-            <img class="img" id="topleft" src="images/1.jpeg" alt="">
-            <img class="color" src="images/b2ab99.png" alt="">
-            <img class="img" src="images/9.jpeg" alt="">
-            <img class="img" src="images/4.jpeg" alt="">
-            <img class="color" id ="topright"src="images/c4bdb7.png" alt="">
-            <img class="img" src="images/6.jpeg" alt="">
-            <img class="img" src="images/7.jpg" alt="">
-            <img class="color" src="images/958b81.png" alt="">
-            <img class="img" src="images/3.jpeg" alt="">
-            <img class="img" src="images/10.jpeg" alt="">
-            <img class="color" id="bottomleft" src="images/c6bfaf.png" alt="">
-            <img class="img" src="images/5.jpeg" alt="">
-            <img class="color" src="images/a89074.png" alt="">
-            <img class="color" src="images/b4b4ac.png" alt="">
-            <img class="img" id="bottomright" src="images/8.jpeg" alt="">
-          </div>
-        </div>
+    <section>
+      <div id='paypal-price'>8.15</div>
+      <div class="paypal-checkout">
+        <div id="paypal-button"></div>
       </div>
     </section>
     <% include ../helpers/copyright %>
   </main>
+  <script src="https://www.paypal.com/sdk/js?client-id=AbED08r8HOThro8n-jmKA2Bjbp00B3caSHjGf2jEb4NFi-gwrOJW9VHahpnhUCO6kkTa_97FNdLHMnEu&disable-funding=credit,card"></script>
+  <script src="/js/pay.js"></script>
 </body>
 
 </html>

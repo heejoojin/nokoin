@@ -1,7 +1,7 @@
 {
-  "name": "muny-studio",
+  "name": "nokoin",
   "version": "0.1.5",
-  "description": "Node.js app for Muny Pottery Studio",
+  "description": "Node.js app for nokoin",
   "main": "index.js",
   "scripts": {
     "start": "node project/start.js"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heejoojin/muny_studio"
+    "url": "https://github.com/heejoojin/nokoin"
   },
   "keywords": [
     "node",
