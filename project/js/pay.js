@@ -22,8 +22,14 @@ document.getElementById('button').onclick = async function () {
          * in the ScanSettings interface of the BarcodeScanner class. By default that is set to 3000 ms (or 3 secs) 
          */
         scanner.onUnduplicatedRead = (txt, result) => {
-            alert(txt);
-            console.log("Unique Code Found: " + result);
+
+            // change page
+            window.location = "/loading";
+            // var button = document.getElementById("loading");
+            // button.click();
+            // alert(txt);
+            // $("#loading").trigger("click");
+            // console.log("Unique Code Found: " + result);
         }
         await scanner.show();
     } catch (ex) {
