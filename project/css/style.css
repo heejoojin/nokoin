@@ -14,6 +14,10 @@ body {
 	background-image: url('/images/screens/3.png');
 }
 
+#screen4 {
+	background-image: url('/images/screens/4.png');
+}
+
 /*#button {  
 }*/
 
@@ -22,6 +26,13 @@ body {
     width: 170.3995px;
     left: 180px;
     top: 285px;
+}
+
+#insert-button {
+	position: absolute;
+    width: 170.3995px;
+    left: 510px;
+    top: 312px;
 }
 
 #cryto-button {
@@ -33,8 +44,16 @@ body {
 
 #video {
 	position: absolute;
+	width: 700px;
+	height: 500px;
+	left: 150px;
+    top: 152px;
+}
+
+#loading {
+	position: absolute;
 	width: 500px;
-	height: 400px;
-	left: 110px;
-    top: 212px;
+	/*height: 500px;*/
+	left: 150px;
+    top: 152px;
 }

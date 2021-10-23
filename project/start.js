@@ -33,7 +33,7 @@ app.get('/loading', function(request, response) {
   	console.log(`stderr: ${data}`);
   });
   result.on('close', (code) => {
-  	console.log(`child process exited with code ${code}`);
+  	console.log('child process exited with code ${code}');
   });
 });
 

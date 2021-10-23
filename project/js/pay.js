@@ -1,10 +1,10 @@
 
 Dynamsoft.DBR.BarcodeScanner.organizationID = "100731799";
 Dynamsoft.DBR.BarcodeReader.productKeys = "t0068NQAAAEa2vhEKG8ZfiSEzbWTHMdB3k8iXEU65DKVd3BncYIPvJPlni465ybIveVFFFdg3qugMursl41wKsk9q1waDWJQ=";
-let _scanner = null;
+let scanner = null;
 document.getElementById('button').onclick = async function () {
     try {
-        let scanner = await (_scanner = _scanner || Dynamsoft.DBR.BarcodeScanner.createInstance());
+        scanner = await Dynamsoft.DBR.BarcodeScanner.createInstance();
         /* 
          * onFrameRead is triggered once each frame is read. 
          * There can be one or multiple barcodes on each frame.
