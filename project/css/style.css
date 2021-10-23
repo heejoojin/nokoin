@@ -1,0 +1,40 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#screen1 {
+	background-image: url('/images/screens/1.png');
+}
+
+#screen2 {
+	background-image: url('/images/screens/2.png');
+}
+
+#screen3 {
+	background-image: url('/images/screens/3.png');
+}
+
+/*#button {  
+}*/
+
+#cash-button {
+	position: absolute;
+    width: 170.3995px;
+    left: 180px;
+    top: 285px;
+}
+
+#cryto-button {
+	position: absolute;
+    width: 170.3995px;
+    left: 510px;
+    top: 312px;
+}
+
+#video {
+	position: absolute;
+	width: 500px;
+	height: 400px;
+	left: 110px;
+    top: 212px;
+}

@@ -1,9 +1,4 @@
 var express = require('express');
-
-// communication between javascript and js files 
-// const { spawn } = require('child_process');
-// const childPython = spawn('python', ['etherum.py']);
-
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
@@ -19,8 +14,27 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/cash', function(request, response) {
+  response.render('pages/cash');
+});
+
+app.get('/qrcode', function(request, response) {
+	response.render('pages/qrcode');
+});
+
 app.get('/loading', function(request, response) {
   response.render('pages/loading');
+  const { spawn } = require('child_process');
+  const result = spawn('python', ['app.py']);
+  result.stdout.on('data', (data) => {
+  	console.log(`stdout: ${data}`);
+  });
+  result.stderr.on('data', (data) => {
+  	console.log(`stderr: ${data}`);
+  });
+  result.on('close', (code) => {
+  	console.log(`child process exited with code ${code}`);
+  });
 });
 
 app.listen(app.get('port'), function() {
