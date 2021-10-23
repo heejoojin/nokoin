@@ -12,14 +12,22 @@
 <body>
   <main>
     <section>
-      <div id='paypal-price'>8.15</div>
+      <!-- <div id='paypal-price'>8.15</div>
       <div class="paypal-checkout">
         <div id="paypal-button"></div>
+      </div> -->
+
+      <div id='price'>8.15</div>
+      <div class="nokoin">
+        <button id="button" onclick="takeQRcode()">ethereum</button>
       </div>
+      <div class="qrcode">
+        <video autoplay="true" id="video"></video>
+      </div>
+
     </section>
   </main>
-  <script src="https://www.paypal.com/sdk/js?client-id=ATGPtXUAq_VQOvDBYkEr1qOcrRVaTpA1QkcfZU7EvRrm3RZmd6JmBl6gIdN4AKMswXnt11VSmRLPmND1"></script>
-  <!-- <script src="https://www.paypal.com/sdk/js?client-id=ATTJ4svhaXshK7Sq6kAa9QMAkFjJmyBXyKiG2FY6fzIDVhCGOh4KI_m3everLX_mexgvuxfTlyicmZqL&enable-funding=venmo"></script> -->
+  <!-- <script src="https://www.paypal.com/sdk/js?client-id=ATGPtXUAq_VQOvDBYkEr1qOcrRVaTpA1QkcfZU7EvRrm3RZmd6JmBl6gIdN4AKMswXnt11VSmRLPmND1"></script> -->
   <script src="/js/pay.js"></script>
 </body>
 
