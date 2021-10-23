@@ -23,7 +23,7 @@ setTimeout(function() {
         onApprove:function(data, actions) {
             return actions.order.capture().then(function(detail) {
                 console.log(detail);
-                window.location.href = "/";
+                // window.location.href = "/";
             });
         }
     }).render('#paypal-button');
