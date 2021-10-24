@@ -27,10 +27,10 @@ app.get('/loading', function(request, response) {
   const { spawn } = require('child_process');
   const result = spawn('python', ['app.py']);
   result.stdout.on('data', (data) => {
-  	console.log(`stdout: ${data}`);
+  	console.log('stdout: ${data}');
   });
   result.stderr.on('data', (data) => {
-  	console.log(`stderr: ${data}`);
+  	console.log('stderr: ${data}');
   });
   result.on('close', (code) => {
   	console.log('child process exited with code ${code}');
