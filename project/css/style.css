@@ -49,8 +49,8 @@ body {
 
 #video {
 	position: relative;
-	width: 47.554vw;
-	height: 33.967vw;
+	width: max(47.554vw, 33.967vw);
+	height: min(47.554vw, 33.967vw);
 	left: 10.290vw;
     top: 10.326vw;
 }
