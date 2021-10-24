@@ -14,6 +14,8 @@ document.getElementById('button').onclick = async function () {
         element.autoplay = true
         document.getElementById("container").appendChild(element);
 
+        document.body.style.backgroundImage = "url('/images/screens/empty.png')";
+
         let scanner = await (pScanner = pScanner || Dynamsoft.DBR.BarcodeScanner.createInstance());
         /* 
          * onFrameRead is triggered once each frame is read. 

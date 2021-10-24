@@ -18,6 +18,10 @@ body {
 	background-image: url('/images/screens/4.png');
 }
 
+#screen5 {
+	background-image: url('/images/screens/error.png');
+}
+
 /*#button {
 	display: none;
 }*/
@@ -47,37 +51,27 @@ body {
     top: 21.696vw;
 }
 
-/*#video {
+.back-button {
+	position: relative;
+	width: 10.567vw;
+	left: 16.174vw;
+    top: 46.722vw;
+}
+
+#video {
 	position: relative;
 	width: 47.554vw;
 	height: 33.967vw;
 	left: 10.290vw;
     top: 10.326vw;
-}*/
+}
 
 #loading {
 	position: relative;
 	width: 10.967vw;
 	left: 28.174vw;
-    top: 13.022vw;
+    top: 12.022vw;
 }
 
-@media (orientation: landscape) {
-	#video {
-		position: relative;
-		width: 47.554vw;
-		height: 33.967vw;
-		left: 10.290vw;
-	    top: 10.326vw;
-	}
-}
 
-@media (orientation: portrait) {
-	#video {
-		position: relative;
-		width: 68.554vw;
-		height: 20.967vw;
-		left: 3.290vw;
-	    top: 14.326vw;
-	}
-}
+
