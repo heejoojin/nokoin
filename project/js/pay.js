@@ -5,6 +5,7 @@ Dynamsoft.DBR.BarcodeReader.productKeys = "t0068NQAAAEa2vhEKG8ZfiSEzbWTHMdB3k8iX
 let pScanner = null;
 document.getElementById('cryto-button').onclick = async function () {
     try {
+        document.getElementById('cryto-button').style.display = 'none';
         console.log('click');
 
         var element = document.createElement("video");
@@ -24,6 +25,8 @@ document.getElementById('cryto-button').onclick = async function () {
                 console.log(result.barcodeFormatString + ": " + result.barcodeText);
             }
         };
+
+        
         /* 
          * onUnduplicatdRead is triggered once a new barcode is found. 
          * The amount of time that the library 'remembers' the found barcode is defined by duplicateForgetTime 
@@ -33,6 +36,7 @@ document.getElementById('cryto-button').onclick = async function () {
             window.location = "/loading";
             // alert(txt);
         }
+
         await scanner.show();
     } catch (ex) {
         alert(ex.message);
