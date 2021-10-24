@@ -75,9 +75,9 @@ body {
 @media (orientation: portrait) {
 	#video {
 		position: relative;
-		width: 33.967vw; 
-		height: 47.554vw;
-		left: 10.290vw;
-	    top: 10.326vw;
+		width: 68.554vw;
+		height: 20.967vw;
+		left: 3.290vw;
+	    top: 14.326vw;
 	}
 }
