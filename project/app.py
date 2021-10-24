@@ -23,6 +23,6 @@ tx = {
     'gasPrice': w3.toWei(40, 'gwei')
 }
 
-# signed_tx = w3.eth.account.sign_transaction(tx, priv_key)
-# hashed_tx = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
-# print(hashed_tx)
+signed_tx = w3.eth.account.sign_transaction(tx, priv_key)
+hashed_tx = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+print(hashed_tx)
