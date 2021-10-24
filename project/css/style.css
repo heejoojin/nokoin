@@ -19,14 +19,14 @@ body {
 }
 
 #cash-button {
-	/*position: absolute;*/
+	position: absolute;
     width: 170.3995px;
     left: 180px;
     top: 285px;
 }
 
 #insert-button {
-	/*position: absolute;*/
+	position: absolute;
     width: 470px;
     left: 272px;
     top: 463px;
@@ -48,9 +48,8 @@ body {
 }
 
 #loading {
-	/*position: absolute;*/
+	position: absolute;
 	width: 500px;
-	/*height: 500px;*/
 	left: 400px;
     top: 280px;
 }
