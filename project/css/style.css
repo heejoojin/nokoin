@@ -18,9 +18,9 @@ body {
 	background-image: url('/images/screens/4.png');
 }
 
-#button {
+/*#button {
 	display: none;
-}
+}*/
 
 .cash-button {
 	position: relative;
