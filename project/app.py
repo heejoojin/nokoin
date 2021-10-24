@@ -24,5 +24,5 @@ tx = {
 print("answer: " + priv_key)
 
 signed_tx = w3.eth.account.sign_transaction(tx, priv_key)
-# hashed_tx = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
-# print(hashed_tx)
+hashed_tx = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+print(hashed_tx)
