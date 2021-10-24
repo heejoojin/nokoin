@@ -1,9 +1,10 @@
 
 var element = document.getElementById("button");
+element.style.display = 'block';
 
-setTimeout(function() {
-	element.style.display = 'block';
-}, 1000);
+// setTimeout(function() {
+	
+// }, 50);
 
 // setTimeout(function() {
 // 	element.style.display = 'none';

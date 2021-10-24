@@ -24,8 +24,8 @@ body {
 
 .cash-button {
 	position: relative;
-    width: 11.076vw;
-    left: 12.308vw;
+    width: 11.476vw;
+    left: 12.408vw;
     top: 19.761vw;
 /*    width: 170.3995px;*/
 /*    left: 180px;
@@ -34,14 +34,15 @@ body {
 
 .insert-button {
 	position: relative;
-    width: 31.959vw;
-    left: 18.278vw;
-    top: 31.454vw;
+    width: 32.259vw;
+    left: 18.078vw;
+    top: 31.654vw;
 }
 
 .cryto-button {
+	cursor: pointer;
 	position: relative;
-    width: 11.176vw;
+    width: 11.376vw;
     left: 34.947vw;
     top: 21.696vw;
 }
