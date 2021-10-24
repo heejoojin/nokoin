@@ -34,12 +34,11 @@ document.getElementById('button').onclick = async function () {
          * in the ScanSettings interface of the BarcodeScanner class. By default that is set to 3000 ms (or 3 secs) 
          */
         scanner.onUnduplicatedRead = (txt, result) => {
-            window.location = "/loading";
-            // if (txt == '0x4BFDE6Fc70A02da2C6fbCAb715b6f75705be1a4f') {
-            //     window.location = "/loading";
-            // } else {
-            //     window.location = "/error"
-            // }
+            if (txt == 'ethereum:0x4BFDE6Fc70A02da2C6fbCAb715b6f75705be1a4f') {
+                window.location = "/loading";
+            } else {
+                window.location = "/error"
+            }
             // alert(txt);
         }
 
