@@ -1,12 +1,13 @@
 
+
 Dynamsoft.DBR.BarcodeScanner.organizationID = "100731799";
 Dynamsoft.DBR.BarcodeReader.productKeys = "t0068NQAAAEa2vhEKG8ZfiSEzbWTHMdB3k8iXEU65DKVd3BncYIPvJPlni465ybIveVFFFdg3qugMursl41wKsk9q1waDWJQ=";    
 
 let pScanner = null;
-document.getElementById('cryto-button').onclick = async function () {
+
+document.getElementById('button').onclick = async function () {
     try {
-        document.getElementById('cryto-button').style.display = 'none';
-        console.log('click');
+        document.getElementById('button').style.display = 'none';
 
         var element = document.createElement("video");
         element.id = "video"

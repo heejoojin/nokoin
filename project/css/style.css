@@ -18,24 +18,28 @@ body {
 	background-image: url('/images/screens/4.png');
 }
 
-#cash-button {
+#button {
+	display: none;
+}
+
+.cash-button {
 	position: relative;
-    width: 11.576vw;
-    left: 12.228vw;
-    top: 19.361vw;
+    width: 11.076vw;
+    left: 12.508vw;
+    top: 19.961vw;
 /*    width: 170.3995px;*/
 /*    left: 180px;
     top: 285px;*/
 }
 
-#insert-button {
+.insert-button {
 	position: relative;
-    width: 31.929vw;
-    left: 18.478vw;
-    top: 31.454vw;
+    width: 31.959vw;
+    left: 18.278vw;
+    top: 31.654vw;
 }
 
-#cryto-button {
+.cryto-button {
 	position: relative;
     width: 11.176vw;
     left: 34.947vw;
@@ -52,7 +56,7 @@ body {
 
 #loading {
 	position: relative;
-	width: 33.967vw;
-	left: 27.174vw;
-    top: 19.022vw;
+	width: 10.967vw;
+	left: 28.174vw;
+    top: 13.022vw;
 }

@@ -1,10 +1,11 @@
 
 var element = document.createElement("img");
+element.id = 'loading'
 
 setTimeout(function() {
 	element.setAttribute("src", "images/screens/loading.gif");
-	document.getElementById("loading").appendChild(element);
-}, 2000);
+	document.getElementById("container").appendChild(element);
+}, 1000);
 
 setTimeout(function() {
 	element.style.display = 'none';
