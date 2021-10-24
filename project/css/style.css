@@ -18,26 +18,15 @@ body {
 	background-image: url('/images/screens/4.png');
 }
 
-#button {
-	/*cursor: pointer;*/
-    /*background-color: transparent;*/
-	border: none;
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	left: 525px;
-    top: 325px;
-}
-
 #cash-button {
-	position: absolute;
+	/*position: absolute;*/
     width: 170.3995px;
     left: 180px;
     top: 285px;
 }
 
 #insert-button {
-	position: absolute;
+	/*position: absolute;*/
     width: 470px;
     left: 272px;
     top: 463px;
@@ -46,7 +35,7 @@ body {
 #cryto-button {
 	position: absolute;
     width: 170.3995px;
-    left: 310px;
+    left: 510px;
     top: 312px;
 }
 
@@ -59,7 +48,7 @@ body {
 }
 
 #loading {
-	position: absolute;
+	/*position: absolute;*/
 	width: 500px;
 	/*height: 500px;*/
 	left: 400px;
