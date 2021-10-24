@@ -19,37 +19,40 @@ body {
 }
 
 #cash-button {
-	position: absolute;
-    width: 170.3995px;
-    left: 180px;
-    top: 285px;
+	position: relative;
+    width: 11.576vw;
+    left: 12.228vw;
+    top: 19.361vw;
+/*    width: 170.3995px;*/
+/*    left: 180px;
+    top: 285px;*/
 }
 
 #insert-button {
-	position: absolute;
-    width: 470px;
-    left: 272px;
-    top: 463px;
+	position: relative;
+    width: 31.929vw;
+    left: 18.478vw;
+    top: 31.454vw;
 }
 
 #cryto-button {
-	position: absolute;
-    width: 170.3995px;
-    left: 510px;
-    top: 312px;
+	position: relative;
+    width: 11.576vw;
+    left: 34.647vw;
+    top: 21.196vw;
 }
 
 #video {
-	position: absolute;
-	width: 700px;
-	height: 500px;
-	left: 150px;
-    top: 152px;
+	position: relative;
+	width: 47.554vw;
+	height: 33.967vw;
+	left: 10.190vw;
+    top: 10.326vw;
 }
 
 #loading {
-	position: absolute;
-	width: 500px;
-	left: 400px;
-    top: 280px;
+	position: relative;
+	width: 33.967vw;
+	left: 27.174vw;
+    top: 19.022vw;
 }
