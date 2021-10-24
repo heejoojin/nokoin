@@ -1,6 +1,6 @@
 
 var element = document.createElement("img");
-element.id = 'loading'
+element.id = "loading"
 
 setTimeout(function() {
 	element.setAttribute("src", "images/screens/loading.gif");
@@ -9,5 +9,5 @@ setTimeout(function() {
 
 setTimeout(function() {
 	element.style.display = 'none';
-	document.body.style.backgroundImage = "url('/images/screens/5.png')";
+	window.location = "/end";
 }, 7000);

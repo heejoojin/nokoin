@@ -2,6 +2,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+
 #screen1 {
 	background-image: url('/images/screens/1.png');
 }
@@ -19,21 +20,18 @@ body {
 }
 
 #screen5 {
-	background-image: url('/images/screens/error.png');
+	background-image: url('/images/screens/5.png');
 }
 
-/*#button {
-	display: none;
-}*/
+#error {
+	background-image: url('/images/screens/error.png');
+}
 
 .cash-button {
 	position: relative;
     width: 11.476vw;
     left: 12.408vw;
     top: 19.761vw;
-/*    width: 170.3995px;*/
-/*    left: 180px;
-    top: 285px;*/
 }
 
 .insert-button {
@@ -72,6 +70,3 @@ body {
 	left: 28.174vw;
     top: 12.022vw;
 }
-
-
-

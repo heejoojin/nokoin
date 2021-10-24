@@ -17,10 +17,7 @@ document.getElementById('button').onclick = async function () {
         document.body.style.backgroundImage = "url('/images/screens/empty.png')";
 
         let scanner = await (pScanner = pScanner || Dynamsoft.DBR.BarcodeScanner.createInstance());
-        /* 
-         * onFrameRead is triggered once each frame is read. 
-         * There can be one or multiple barcodes on each frame.
-         */
+
         await scanner.setUIElement(document.getElementById('video'));
         scanner.onFrameRead = results => {
             console.log("Barcodes on one frame:");
@@ -29,19 +26,12 @@ document.getElementById('button').onclick = async function () {
             }
         };
 
-        
-        /* 
-         * onUnduplicatdRead is triggered once a new barcode is found. 
-         * The amount of time that the library 'remembers' the found barcode is defined by duplicateForgetTime 
-         * in the ScanSettings interface of the BarcodeScanner class. By default that is set to 3000 ms (or 3 secs) 
-         */
         scanner.onUnduplicatedRead = (txt, result) => {
             if (txt == 'ethereum:0x4BFDE6Fc70A02da2C6fbCAb715b6f75705be1a4f') {
                 window.location = "/loading";
             } else {
                 window.location = "/error"
             }
-            // alert(txt);
         }
 
         await scanner.show();

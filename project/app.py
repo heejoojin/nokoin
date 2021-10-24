@@ -1,9 +1,6 @@
 from web3 import Web3
 import os
 
-print('python script running ...')
-
-# w3 = Web3(Web3.HTTPProvider('https://kovan.infura.io/v3/c52c215e4d6a4286811feb38afa47ff4'))
 w3 = Web3(Web3.HTTPProvider('https://kovan.infura.io/v3/c52c215e4d6a4286811feb38afa47ff4'))
 
 person1_address = '0x4ae2bC565c55299FAb1AAFc6F0AFd63d7e03ce15'
@@ -24,5 +21,8 @@ tx = {
     'gasPrice': w3.toWei(40, 'gwei')
 }
 
-signed_tx = w3.eth.account.sign_transaction(tx, priv_key)
-hashed_tx = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+print("answer: " + priv_key)
+
+# signed_tx = w3.eth.account.sign_transaction(tx, priv_key)
+# hashed_tx = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+# print(hashed_tx)
