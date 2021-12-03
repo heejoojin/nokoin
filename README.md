@@ -50,3 +50,4 @@ After finishing fulfilling our requirements and constructing our application, we
 
 ## HackGT8 Submission
 - https://devpost.com/software/nokoin
+- https://hackgt8.herokuapp.com/
