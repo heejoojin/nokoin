@@ -1,4 +1,9 @@
 # nokoin
+---
+
+<p align="center"><b> 🏆 HackGT8 Best in App/Web Development & [NCR] Best Use of Cryptocurrency 💰🔑 </b></p>
+
+---
 
 ## Product Summary
 Our product aims to reduce coin usage and foster the utilization of digital currency by providing opportunities for the customers to deposit their changes to cryptocurrency accounts after paying cash.
@@ -42,3 +47,6 @@ After finishing fulfilling our requirements and constructing our application, we
 - Python3, web3
 - Node.js
 - Express
+
+## HackGT8 Submission
+- https://devpost.com/software/nokoin
