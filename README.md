@@ -5,6 +5,9 @@
 
 ---
 
+## Demo
+https://github.com/heejoojin/nokoin/assets/47545332/324a77a6-7ec4-47f7-a2b8-5d64f27dadb8
+
 ## Product Summary
 Our product aims to reduce coin usage and foster the utilization of digital currency by providing opportunities for the customers to deposit their changes to cryptocurrency accounts after paying cash.
 
